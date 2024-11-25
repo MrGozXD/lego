@@ -7,7 +7,7 @@ import addUI from './ui.js';
 import { shader_hatch, fragmentShader, vertexShader } from './shaders.js';
 
 // Variables
-let aspectRatio = (window.innerWidth / window.innerHeight * (1 / 0.7));
+let aspectRatio = (window.innerWidth / window.innerHeight * (1 / 0.6));
 let scene, camera, renderer, controls, robotClock, connorClock, robotAndConnorClocks = [];
 
 /*
@@ -36,7 +36,7 @@ function addVideo() {
 
 function createRenderer() {
   renderer = new THREE.WebGLRenderer();
-  renderer.setSize(window.innerWidth, window.innerHeight * 0.7);
+  renderer.setSize(window.innerWidth, window.innerHeight * 0.6);
   renderer.setClearColor(0x000000, 1.0);
   document.body.appendChild(renderer.domElement);
 }
@@ -206,7 +206,7 @@ init();
 // if windows is resized, update the camera and renderer
 window.addEventListener('resize', () => {
   // set size of the canvas to the window size minus header size and footer size
-  renderer.setSize(window.innerWidth, window.innerHeight * 0.7);
-  aspectRatio = (window.innerWidth / window.innerHeight * (1 / 0.7));
+  renderer.setSize(window.innerWidth, window.innerHeight * 0.6);
+  aspectRatio = (window.innerWidth / window.innerHeight * (1 / 0.6));
   camera.updateProjectionMatrix();
 });
