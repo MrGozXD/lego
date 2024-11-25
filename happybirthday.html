@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Joyeux anniversaire mon coeur</title>
+    <style>
+        body {
+            margin: 0;
+            display: flex;
+            flex-direction: column-reverse;
+            height: 100%;
+            background-color: #F5B33E;
+
+        }
+
+        body :nth-child(1) {
+            order: 1;
+        }
+
+        body :nth-child(2) {
+
+            order: 2;
+        }
+
+        @font-face {
+            font-family: Renogare;
+            src: local("sources/Renogare-Regular.otf") format("opentype");
+
+        }
+
+        h1 {
+            font-family: Renogare;
+
+            text-align: center;
+            background-color: #F5B33E;
+            margin: 0%;
+
+            padding: 0%;
+            padding-top: 1%;
+            font-size: 50px;
+
+
+        }
+
+        h2 {
+            font-family: Renogare;
+            font-size: 50px;
+
+            text-align: center;
+            background-color: #F5B33E;
+            margin: 0%;
+
+            padding: 0%;
+
+        }
+    </style>
+</head>
+
+<body>
+    <h1>Joyeux anniversaire mon coeur !</h1>
+    <script type="importmap">
+        {
+            "imports":
+            {
+                "three": "./libs/three.module.js"
+            }
+        }
+    </script>
+    <script type="module" src="./index.js"></script>
+    <h2>Je t'aime plus fort que tout</h2>
+</body>
+
+</html>
