@@ -18,6 +18,7 @@ video.loop = true;
 const videoTexture = new THREE.VideoTexture(video);
 videoTexture.minFilter = THREE.LinearFilter;
 */
+//fuckedup
 function addVideo() {
   const size = 3;
   const geometry = new THREE.PlaneGeometry((4 / 3) * size, size);
